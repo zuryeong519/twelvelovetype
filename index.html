@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zuryeong519">
+    <meta name="keywords" content="십이간지 연애유형">
+    <meta name="description" content="십이간지 연애유형">
+
+    <!--sns share-->
+    <meta property="og:url" content="https://zuryeong519.github.io/twelvelovetype/" /> 
+    <meta property="og:title" content="십이간지 연애유형" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/main.png" />
+    <meta property="og:description" content="십이간지로 알아보는 연애유형(zuryeong519)" />
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+
+    <title>십이간지 연애유형</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+    <script>
+        Kakao.init('fafc2824f08d08646d6b0f6f241cc99a');  
+        Kakao.isInitialized();
+    </script>
+
+    <style>
+        body {
+            font-family: 'Hi Melody', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <section id="main" class="mx-auto my-5 py-5 px-3">
+            <h1>십이간지로 알아보는 연애유형</h1>
+            <div class="col-lg-6 col-md-6 col-sm-8 col-10 mx-auto">
+                <img src="./img/main.png" alt="mainImage" class="img-fluid">
+            </div>
+            <P>
+                십이간지로 연애유형을 알아보는 사이트입니다<br>
+                아래 시작하기 버튼을 눌러주세요!
+            </P>
+            <button type="button" class="btn btn-outline-danger mt-3" onclick="js:begin()">시작하기</button>
+        </section>
+
+        <section id="qna">
+            <div class="status mx-auto mt-5">
+                <div class="statusBar">
+
+                </div>
+            </div>
+            <div class="qBox my-5 py-3 mx-auto">
+
+            </div>
+            <div class="answerBox">
+
+            </div>
+        </section>
+
+        <section id="result" class="mx-auto my-5 py-5 px-3">
+            <h1>당신의 결과는?!</h1>
+            <div class="resultname">
+
+            </div>
+            <div id="resultImg" class="my-3 col-lg-6 col-md-6 col-sm-8 col-10 mx-auto">
+
+            </div>
+            <div class="resultDesc">
+
+            </div>
+            <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+        </section>
+
+        <script src="./js/data.js" charset="utf-8"></script>
+        <script src="./js/start.js" charset="utf-8"></script>
+        <script src="./js/share.js" charset="utf-8"></script>
+
+    </div>
+
+</body>
+
+</html>
